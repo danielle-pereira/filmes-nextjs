@@ -25,11 +25,12 @@ const IndexPage = () => {
     setMovies(data.Search || []);
     setSearched(true);
   };
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === "Enter") {
       handleSearch();
     }
   };
+  
   
 
   return (
